@@ -25,7 +25,7 @@ async def on_message(message):
 
     if message.content.startswith("#잘자"):
         await message.channel.send("세모 자러가욧")
-        await message.channel.send(file=discord.File("잠자는 세모.jpg"))
+        await message.channel.send(url="https://cdn.discordapp.com/attachments/726834573891207291/726877468652470362/KakaoTalk_20200629_040414014d.jpg")
 
     if message.content.startswith("#잘가") or message.content.startswith("#꺼져"):
         bye = ["세모 좀 더 놀고시푼뎅,,,,,", "아가리", "정수민 야발아 난 간다", "세모 버리지마,,, ( ˃̣̣̥᷄⌓˂̣̣̥᷅ ) ", "세모는 가기시러욧!☆!"]
