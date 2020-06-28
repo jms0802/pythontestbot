@@ -1,5 +1,6 @@
 import discord
 import random
+import os
 
 client = discord.Client()
 
@@ -62,4 +63,5 @@ async def on_message(message):
         embed.add_field(name="#목록 (...)  (...)", value="#뽑기 의 (숫자)만큼 작성 (예: #뽑기 3 , #목록 1 2 3)")
         await ctx.send(embed=embed)
 
-client.run("NzI2ODI5MDY5MjQ0Njk0NTc4.XvjjWQ._ux6mD5JjGENsBE_45e5LJyIl00")
+access_token = os.environ("BOT_TOKEN")
+client.run(access_token)
