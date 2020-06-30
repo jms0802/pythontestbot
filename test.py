@@ -185,8 +185,8 @@ async def on_message(message):
 
                 if r1 == 0: #낚시 실패
                     sheet2["C" + str(i)].value -= 1
-                    await ctx.send("실패!")
-                    await ctx.send(str(sheet2["C" + str(i)].value) + "개 미끼 남음")
+                    embed2 = discord.Embed(title="낚시 실패,,,", color=0x9400D3)
+                    embed2.add_field(name="미끼", value=str(sheet2["C" + str(i)].value) + "개 남음")
                     file2.save("낚시.xlsx")
                     break
 
