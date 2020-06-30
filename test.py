@@ -187,6 +187,7 @@ async def on_message(message):
                     sheet2["C" + str(i)].value -= 1
                     embed2 = discord.Embed(title="낚시 실패,,,", color=0x9400D3)
                     embed2.add_field(name="미끼", value=str(sheet2["C" + str(i)].value) + "개 남음")
+                    await ctx.send(embed=embed2)
                     file2.save("낚시.xlsx")
                     break
 
